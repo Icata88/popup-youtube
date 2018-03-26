@@ -84,7 +84,7 @@ class CommentForm extends Component {
 
 
 	render() {
-		let isValidComment = validateInput(this.state.commentValue);
+		let isValidComment = validateInput.validComment(this.state.commentValue);
 
 		return (
 			<form onSubmit={this.onSubmit} className='col-xs-12'>

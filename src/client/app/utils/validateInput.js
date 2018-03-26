@@ -1,14 +1,14 @@
-let validateInput = (comment) => {
-	let validComment = (() => {
-		if (comment !== '') {
+let validateInput = ((comment) => {
+	let validComment = (comment) => {
+		if (comment.trim() !== '') {
 			return true;
 		}
 		return false;
-	})();
+	}
 
 	return {
 		validComment
 	};
-};
+})();
 
 export default validateInput;
